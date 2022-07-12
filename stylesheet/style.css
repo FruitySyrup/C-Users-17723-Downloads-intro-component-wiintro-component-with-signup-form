@@ -91,6 +91,13 @@ input[type=password]:focus {
     border: .1rem solid var(--blue);   
 }
 
+div .btn-and-terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
 button {
     background-color: var(--green);
     color: #fff;
@@ -105,8 +112,10 @@ button {
 }
 
 p.small-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--grayish-blue);
+    padding-top: 2rem;
+    width: 90%;
 }
 
 span.terms {
