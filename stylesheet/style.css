@@ -117,3 +117,12 @@ span.terms {
     color: var(--red);
     font-weight: 700;
 }
+
+/* error style for inputs */
+input[type=text].error-text {
+    border: .1rem solid var(--red); 
+}
+
+input[type=password].error-password {
+    border: .1rem solid var(--red); 
+}
