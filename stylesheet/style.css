@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html {
     --font-family: "Poppins", sans-serif;
@@ -16,6 +16,7 @@ html {
 body {
     font-family: var(--font-family);
     font-size: 1.6rem;
+    font-weight: 400;
     color: #fff;
     background-image: url(/images/bg-intro-desktop.png);
     background-color: var(--red); 
@@ -29,7 +30,7 @@ section.container {
 }
 
 section.intro-text {
-    max-width: 50rem;
+    width: 50rem;
     text-align: left;
     margin: 5rem;
 }
@@ -44,7 +45,8 @@ section.intro-text p {
 }
 
 section.sign-up-area {
-    max-width: 50rem;
+    width: 50rem;
+    margin-right: 5rem;
 }
 
 div.purple-banner {
@@ -53,9 +55,10 @@ div.purple-banner {
     padding: 1.6rem;
     margin-bottom: 2rem;
     border-radius: 10px;
-    border: 1px;
     box-shadow: 0px .6rem var(--shadow);
+    font-weight: 300;
 }
+
 
 span.try {
     font-weight: 600;
@@ -68,7 +71,7 @@ section div.sign-up-form {
     justify-content: space-around;
     height: 45rem;
     background-color: #fff;
-    padding: 1rem;
+    padding: 3rem 1rem 3rem;
     border-radius: 10px;
     box-shadow: 0px .6rem var(--shadow);
 }
@@ -91,13 +94,6 @@ input[type=password]:focus {
     border: .1rem solid var(--blue);   
 }
 
-div .btn-and-terms {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-}
-
 button {
     background-color: var(--green);
     color: #fff;
@@ -106,7 +102,7 @@ button {
     text-transform: uppercase;
     font-family: inherit;
     width: 90%;
-    padding: 1.6rem;
+    padding: 1.3rem;
     border-radius: 10px;
     box-shadow: 0px .4rem var(--green-shadow);
 }
@@ -114,8 +110,8 @@ button {
 p.small-text {
     font-size: 1rem;
     color: var(--grayish-blue);
-    padding-top: 2rem;
-    width: 90%;
+    padding-bottom: rem;
+   
 }
 
 span.terms {
