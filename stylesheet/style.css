@@ -75,8 +75,7 @@ section div.sign-up-form {
     box-shadow: 0px .6rem var(--shadow);
 }
 
-input[type=text], 
-input[type=password] {
+.form-field input {
     width: 90%;
     padding: 1.5rem;
     font-family: inherit;
@@ -86,11 +85,17 @@ input[type=password] {
     transition: .3s border;
 }
 
-input[type=text]:focus, 
-input[type=password]:focus {
-    /* this outline must be added for border to be changed */
-    outline: none !important;
+.form-field input:focus  {
     border: .1rem solid var(--blue);   
+}
+
+.form-field.error input {
+    border-color: var(--red);
+}
+
+/* this will make the error message red, messages will be made in JS */
+.form-field small {
+    color: var(--red);
 }
 
 button {
