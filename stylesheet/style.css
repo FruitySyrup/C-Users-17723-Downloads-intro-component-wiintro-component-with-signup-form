@@ -63,7 +63,7 @@ span.try {
     font-weight: 600;
 }
 
-section div.sign-up-form {
+form#signup.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,9 +75,13 @@ section div.sign-up-form {
     box-shadow: 0px .6rem var(--shadow);
 }
 
-
-.form-field input {
+/* when fixing html names this section go bugged and would not longer take the correct width. this was my fix */
+div.form-field {
     width: 90%;
+}
+
+div.form-field input {
+    width: 100%;
     padding: 1.5rem;
     font-family: inherit;
     font-weight: 600;
@@ -87,6 +91,7 @@ section div.sign-up-form {
 }
 
 .form-field input:focus  {
+    outline: none !important;
     border: .1rem solid var(--blue);   
 }
 
