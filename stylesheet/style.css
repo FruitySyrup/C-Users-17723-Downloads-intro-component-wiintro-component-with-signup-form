@@ -99,9 +99,15 @@ div.form-field input {
     border-color: var(--red);
 }
 
-/* this will make the error message red, messages will be made in JS */
+/* this will make the error message red, message text will be made in JS */
 .form-field small {
     color: var(--red);
+    margin-top: .5rem;
+    margin-bottom: .7rem;
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 button {
@@ -118,6 +124,7 @@ button {
 }
 
 p.small-text {
+    margin-top: 1rem;
     font-size: 1rem;
     color: var(--grayish-blue);
 }
