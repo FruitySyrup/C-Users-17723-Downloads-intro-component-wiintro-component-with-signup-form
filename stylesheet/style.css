@@ -75,9 +75,10 @@ form#signup.form {
     box-shadow: 0px .6rem var(--shadow);
 }
 
-/* when fixing html names this section go bugged and would not longer take the correct width. this was my fix */
+/* when fixing html names this section got bugged and would not longer take the correct width. this was my fix(the 90%) */
 div.form-field {
     width: 90%;
+    position: relative;
 }
 
 div.form-field input {
@@ -88,11 +89,23 @@ div.form-field input {
     border-radius: 5px;
     border: .1rem solid var(--shadow);
     transition: .3s border;
+    
 }
 
 .form-field input:focus  {
     outline: none !important;
     border: .1rem solid var(--blue);   
+}
+
+.form-field img {
+    visibility: hidden;
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+}
+
+.form-field.error img {
+    visibility: visible;
 }
 
 .form-field.error input {
@@ -101,6 +114,7 @@ div.form-field input {
 
 /* this will make the error message red, message text will be made in JS */
 .form-field small {
+    visibility: hidden;
     color: var(--red);
     margin-top: .5rem;
     margin-bottom: .7rem;
@@ -108,6 +122,10 @@ div.form-field input {
     justify-content: flex-end;
     font-style: italic;
     font-size: 1rem;
+}
+
+.form-field.error small {
+    visibility: visible;
 }
 
 button {
