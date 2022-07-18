@@ -6,6 +6,7 @@ html {
    
     --red: hsl(0, 100%, 74%); 
     --green: hsl(154, 59%, 51%);
+    --green-hover: hsla(154, 68%, 54%, 0.897);
     --green-shadow: hsl(154, 59%, 43%);
     --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
@@ -87,9 +88,7 @@ div.form-field input {
     font-family: inherit;
     font-weight: 600;
     border-radius: 5px;
-    border: .1rem solid var(--shadow);
-    transition: .3s border;
-    
+    border: .1rem solid var(--shadow);    
 }
 
 .form-field input:focus  {
@@ -139,6 +138,10 @@ button {
     padding: 1.3rem;
     border-radius: 10px;
     box-shadow: 0px .4rem var(--green-shadow);
+}
+
+button:hover {
+    background-color: var(--green-hover);
 }
 
 p.small-text {
