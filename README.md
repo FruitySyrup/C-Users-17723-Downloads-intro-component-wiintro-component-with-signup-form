@@ -50,5 +50,5 @@ Learned about the form element, general validation and using parentElement in JS
 ### Useful resources
 
 - [Javascript form validation](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) - I googled this article to get me started on learning the JS for the form validation. 
-- [Video by WEB CIFAR](https://www.youtube.com/watch?v=HD4qiSU1CBQ) - When I was having issues with my frist attempt, I looked at the JS in this ezample.
+- [Video by WEB CIFAR](https://www.youtube.com/watch?v=HD4qiSU1CBQ) - When I was having issues with my frist attempt, I looked at the JS in this example.
 - [stackoverflow help](https://stackoverflow.com/questions/11701844/html-5-browsers-pop-up-on-input-with-type-email) - I was having an isue with an auto alert that is in the broswer with input="email". This post helped me find how to remove that.
